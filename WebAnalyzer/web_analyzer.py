@@ -75,9 +75,9 @@ for p in paragraphs:
 print(longest_paragraph)
 
 labels = ['Headings', 'Links', 'Paragraphs']
-values = [len(headings), len(links), len(paragraphs)]
+values = [len(headers), len(links), len(paragraphs)]
 plt.bar(labels, values)
 plt.title('Group 27')
 plt.ylabel('Count')
-# plt.savefig('web_analysis_results.png') # Save the figure as an image file
+plt.savefig('web_analysis_results.png') # Save the figure as an image file
 plt.show()
