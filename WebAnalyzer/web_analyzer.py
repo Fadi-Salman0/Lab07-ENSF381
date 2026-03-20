@@ -54,7 +54,7 @@ for i in max_5:
 for i in max_index:
     print(word_array[i], word_count[i])
 
-searched_word = input("Enter a word dumbass: ").lower()
+searched_word = input("Enter a word: ").lower()
 try:    
     print(word_count[word_array.index(searched_word)])
 except Exception as error:
@@ -64,7 +64,7 @@ longest_paragraph = ""
 max_words = 0
 
 for p in paragraphs:
-    text = p.get_text().strip()
+    text = p.get_text()
     words = re.findall(r'\b\w+\b', text)
 
     if(len(words) >= 5):
